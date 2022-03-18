@@ -1,0 +1,154 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.logo img {
+  width: 200px;
+  height: 70px;
+  opacity: 0.8;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0;
+  height: 60px;
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(
+    to left,
+    rgba(60, 60, 60, 0.5),
+    rgba(60, 60, 60, 0.5)
+  );
+  position: fixed;
+  z-index: 10;
+}
+
+nav {
+  margin: auto;
+  padding: 20px 0;
+  list-style: none;
+}
+
+nav li {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+.header li:hover {
+  font-size: 1.05rem;
+  background-color: rgba(60, 60, 60, 0.5);
+}
+
+nav li a:hover {
+  color: ghostwhite;
+}
+
+nav li a {
+  color: #4a4a4a;
+  font-weight: 700;
+  line-height: 0.5rem;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  top: 120px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(60, 60, 60, 0.02);
+}
+
+.container > div {
+  width: 300px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+  padding-top: 80px;
+}
+
+.photo {
+  width: 100%;
+  height: 250px;
+}
+
+figure {
+  border: thin #c0c0c0 solid;
+  border-radius: 7px;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  width: 300px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  font-weight: 1.5;
+  padding: 4px;
+  text-align: center;
+}
+
+figure:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin: 10px 5px;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer > div {
+  width: 300px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+footer p {
+  color: #4a4a4a;
+  width: 300px;
+  margin-left: 20px;
+  line-height: 1.2;
+}
+
+footer h2 {
+  margin: 20px;
+}
+
+footer ul {
+  list-style: none;
+}
+footer li a {
+  color: #4a4a4a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer address {
+  color: #4a4a4a;
+}
